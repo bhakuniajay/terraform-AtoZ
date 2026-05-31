@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Panchavati Hills Homestay Dunagiri — Himalayan Yoga Retreat</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Panchavati Hills Homestay Dunagiri: Himalayan yoga retreat near Mahavatar Babaji Cave. Spiritual stays, Ayurvedic meals, Himalayan experiences." />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#15803d" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Panchavati Hills Homestay Dunagiri" />
+    <meta property="og:description" content="Himalayan spiritual retreat near Mahavatar Babaji Cave." />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="icon" href="assets/images/icon.jpg" />
+</head>
+
+<body class="font-sans bg-gray-50 text-gray-800 antialiased">
+    
+<!-- NAVBAR -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 md:px-12 flex items-center justify-between py-4">
+
+        <a href="index.html" class="flex items-center gap-3">
+            <img src="assets/images/icon.jpg" class="w-10 h-10 rounded-full" />
+            <span class="text-lg md:text-xl font-bold text-green-700">
+                Panchavati Hills
+            </span>
+        </a>
+
+        <nav class="hidden md:flex space-x-6">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="https://wa.me/919690185111?text=Hi%20I%20want%20to%20book%20a%20stay"
+           target="_blank"
+           class="hidden md:inline-block bg-green-600 text-white px-5 py-2 rounded-lg">
+            BOOK NOW
+        </a>
+
+        <button id="menu-btn" class="md:hidden text-2xl">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+
+    <div id="menu" class="hidden md:hidden bg-white border-t p-4">
+        <a href="index.html" class="block">Home</a>
+        <a href="about.html" class="block">About</a>
+        <a href="gallery.html" class="block">Gallery</a>
+        <a href="contact.html" class="block">Contact</a>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="min-h-screen bg-cover bg-center text-white flex items-center justify-center text-center"
+style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/homescreenmain.jpg');">
+
+<div>
+    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        Visit Mahavatar Babaji's Cave <br>
+        <span class="text-green-300">The Birthplace of Kriya Yoga</span>
+    </h1>
+
+    <p class="mb-6">
+        Experience peace in the Himalayas with spiritual stays.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/919690185111?text=Hi%20I%20want%20to%20book%20a%20stay"
+           target="_blank"
+           class="bg-green-600 px-8 py-3 rounded-xl font-bold">
+            BOOK NOW
+        </a>
+
+        <a href="gallery.html"
+           class="border px-8 py-3 rounded-xl">
+            View Gallery
+        </a>
+    </div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section class="py-20 text-center">
+    <h2 class="text-3xl font-bold mb-10">Gallery</h2>
+
+    <div class="grid md:grid-cols-3 gap-6 px-6">
+        <img src="assets/images/babaji-cave.jpg" class="rounded-xl" />
+        <img src="assets/images/retreat-view.jpg" class="rounded-xl" />
+        <img src="assets/images/rooms.jpg" class="rounded-xl" />
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="py-16 bg-green-700 text-white text-center">
+    <h2 class="text-3xl font-bold mb-4">Ready for Your Retreat?</h2>
+
+    <a href="tel:+919690185111"
+       class="bg-white text-green-700 px-8 py-3 rounded-xl font-bold">
+        Call +91 9690185111
+    </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-400 py-6 text-center">
+    © <span id="yr"></span> Panchavati Hills Homestay
+</footer>
+
+<script>
+document.getElementById("menu-btn").onclick = () => {
+    document.getElementById("menu").classList.toggle("hidden");
+};
+document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
